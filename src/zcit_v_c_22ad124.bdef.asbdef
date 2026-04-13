@@ -1,0 +1,9 @@
+projection;
+strict ( 2 );
+
+define behavior for ZCIT_V_C_22AD124 alias Hospital
+{
+  use create;
+  use update;
+  use delete;
+}

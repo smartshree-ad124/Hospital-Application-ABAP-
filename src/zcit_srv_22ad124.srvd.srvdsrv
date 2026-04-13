@@ -1,0 +1,4 @@
+@EndUserText.label: 'Clinic Service Definition'
+define service ZCIT_SRV_22AD124 {
+  expose ZCIT_V_C_22AD124 as Hospital;
+}

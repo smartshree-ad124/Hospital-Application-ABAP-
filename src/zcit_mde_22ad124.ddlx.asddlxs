@@ -1,0 +1,49 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: {
+  typeName: 'Appointment',
+  typeNamePlural: 'Appointments',
+  title: { type: #STANDARD, label: 'Appointment ID', value: 'AppointmentID' }
+}
+annotate view ZCIT_V_C_22AD124 with {
+
+  -- This creates the container/box on the screen --
+  @UI.facet: [ { id: 'idIdentification',
+                 type: #IDENTIFICATION_REFERENCE,
+                 label: 'Appointment Details',
+                 position: 10 } ]
+
+  @UI.lineItem: [{ position: 10 }]
+  @UI.identification: [{ position: 10, label: 'Appointment ID' }]
+  @EndUserText.label: 'Appointment ID'
+  AppointmentID;
+
+  @UI.lineItem: [{ position: 20 }]
+  @UI.identification: [{ position: 20, label: 'Patient Name' }]
+  @EndUserText.label: 'Patient Name'
+  PatientName;
+
+  @UI.lineItem: [{ position: 30 }]
+  @UI.identification: [{ position: 30, label: 'Doctor Specialty' }]
+  @EndUserText.label: 'Doctor Specialty'
+  DoctorSpecialty;
+
+  @UI.lineItem: [{ position: 40 }]
+  @UI.identification: [{ position: 40, label: 'Appointment Date' }]
+  @EndUserText.label: 'Appointment Date'
+  AppointmentDate;
+
+  @UI.lineItem: [{ position: 50 }]
+  @UI.identification: [{ position: 50, label: 'Appointment Time' }]
+  @EndUserText.label: 'Appointment Time'
+  AppointmentTime;
+
+  @UI.lineItem: [{ position: 60 }]
+  @UI.identification: [{ position: 60, label: 'Consulting Fee' }]
+  @EndUserText.label: 'Consulting Fee'
+  ConsultingFee;
+  
+  @UI.identification: [{ position: 70, label: 'Currency' }]
+  @EndUserText.label: 'Currency'
+  ClinicCurrency;
+
+}

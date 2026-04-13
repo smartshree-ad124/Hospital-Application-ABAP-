@@ -1,0 +1,12 @@
+unmanaged implementation in class ZCIT_BHL_22AD124 unique;
+strict ( 2 );
+
+define behavior for ZCIT_V_I_22AD124 alias Hospital
+late numbering
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+}
